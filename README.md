@@ -1,4 +1,5 @@
 # 渲染请求列表组件说明
+基于element UI 的二次封装列表组件 
 
 >引入 TableList 方法
 ```javascript

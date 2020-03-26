@@ -91,6 +91,7 @@
 </template>
 
   <script>
+import { Button, Pagination, Table } from "element-ui";
 export default {
 	data() {
 		return {
