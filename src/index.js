@@ -3,10 +3,6 @@ import tableList from './list.vue';
 let TableConstructor = Vue.extend(tableList);
 let instance;
 let elementNode;
-
-/**
- * 设置提交按钮
- */
 class Submit {
     constructor(func) {
         if (typeof func === 'function') {
@@ -21,9 +17,7 @@ class SetLists {
         this.init()
     }
     english = str => str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())
-    // 转小写
     toLowerCase = str => str.toLowerCase()
-    // 转大写
     isType = (obj, type) => Object.prototype.toString.call(obj) === `[object ${this.english(this.toLowerCase(type))}]`
     submit(submitFunc) {
         if (typeof submitFunc == "function") {
@@ -41,8 +35,6 @@ class SetLists {
                 message: options
             };
         }
-        // 判断是否为 multiple 类型
-        // 是直接获取条件
         if (options && this.isType(options, "Object")) {
             if (!(!options['total'] || this.isType(options['total'], "Number"))) {
                 throw `options.total is not Number`
