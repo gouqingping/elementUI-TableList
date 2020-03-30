@@ -16,9 +16,15 @@ class SetLists {
         this.options = config;
         this.init()
     }
-    english = str => str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())
-    toLowerCase = str => str.toLowerCase()
-    isType = (obj, type) => Object.prototype.toString.call(obj) === `[object ${this.english(this.toLowerCase(type))}]`
+    english(str) {
+        return str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())
+    }
+    toLowerCase(str) {
+        return str.toLowerCase()
+    }
+    isType(obj, type) {
+        return Object.prototype.toString.call(obj) === `[object ${this.english(this.toLowerCase(type))}]`
+    }
     submit(submitFunc) {
         if (typeof submitFunc == "function") {
             this.submitFrom = submitFunc
