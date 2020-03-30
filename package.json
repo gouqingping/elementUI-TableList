@@ -1,0 +1,32 @@
+{
+  "name": "element-ui-table-list",
+  "version": "1.0.0",
+  "description": "基于element UI 的二次封装列表组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouqingping/elementUI-TableList.git"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "vue": "2.5.21",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "2.5.21",
+    "vue-template-es2015-compiler": "^1.6.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gouqingping/elementUI-TableList/issues"
+  },
+  "homepage": "https://github.com/gouqingping/elementUI-TableList#readme"
+}

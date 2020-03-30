@@ -1,11 +1,7 @@
 import Vue from 'vue';
 import tableList from './list.vue';
-
 let TableConstructor = Vue.extend(tableList);
-
 let instance;
-let seed = 1;
-
 let elementNode;
 
 /**
@@ -24,26 +20,11 @@ class SetLists {
         this.options = config;
         this.init()
     }
-    /**
-     * @description: 首字母大写
-     * @param {String} str 英语单词
-     */
     english = str => str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())
     // 转小写
     toLowerCase = str => str.toLowerCase()
     // 转大写
-
-    /**
-     * @description: 判断字符类型
-     * @param {Object} obj 数组数据
-     * @param {String} type 需要判断的字符串
-     */
     isType = (obj, type) => Object.prototype.toString.call(obj) === `[object ${this.english(this.toLowerCase(type))}]`
-
-    /**
-     * submit 提交查询方法 只能为function
-     * @param {只能为function} submitFunc 
-     */
     submit(submitFunc) {
         if (typeof submitFunc == "function") {
             this.submitFrom = submitFunc
