@@ -1,6 +1,6 @@
 {
   "name": "element-ui-table-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于element UI 的二次封装列表组件",
   "main": "index.js",
   "scripts": {
