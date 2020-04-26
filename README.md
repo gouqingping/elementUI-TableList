@@ -7,7 +7,7 @@ import TableList from '@/components/tableList/index'
 ```
 >获取列表组件操作
 ```javascript
-new TableList(NODE).initTable({
+new TableList(dom).initTable({
     total: 30,
     isShowSelection: true,
     isShowNumber: true,
